@@ -1,0 +1,38 @@
+{
+  "name": "jktech",
+  "version": "1.0.0",
+  "description": "S3 Replica",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "nodemon index.ts",
+    "start": "tsc && npm run dev",
+    "db:migrate": "npx sequelize-cli db:migrate",
+    "db:migrate-fresh": "npx sequelize-cli db:migrate:undo:all && npm run db:migrate",
+    "db:create": "npx sequelize-cli db:create",
+    "db:migrate-create": "npx sequelize-cli migration:generate --name"
+  },
+  "author": "Anmol",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.4.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/multer": "^1.4.11",
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "helmet": "^7.0.0",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.0.1",
+    "pg": "^8.11.1",
+    "sequelize": "^6.32.1",
+    "sequelize-cli": "^6.6.2"
+  }
+}
