@@ -614,7 +614,7 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8000/api/aws/list/objects?createdBy=1&bucketName=bucket2",
+					"raw": "localhost:8000/api/aws/list/objects?createdBy=1",
 					"host": [
 						"localhost"
 					],
@@ -629,10 +629,6 @@
 						{
 							"key": "createdBy",
 							"value": "1"
-						},
-						{
-							"key": "bucketName",
-							"value": "bucket2"
 						}
 					]
 				}
